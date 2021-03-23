@@ -14,3 +14,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('substances.index') }}"
+       class="nav-link {{ Request::is('substances*') ? 'active' : '' }}">
+        <p>Substances</p>
+    </a>
+</li>
+
+

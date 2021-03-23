@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model as Model;
+use Eloquent as Model;
 
 /**
  * Class Substance
  * @package App\Models
- * @version March 22, 2021, 6:18 pm UTC
+ * @version March 23, 2021, 3:04 pm UTC
  *
  * @property integer $identifier
  * @property string $name
@@ -46,7 +46,9 @@ class Substance extends Model
      */
     public static $rules = [
         'identifier' => 'required|integer',
-        'name' => 'required|string|max:255'
+        'name' => 'required|string|max:255',
+        'created_at' => 'nullable',
+        'updated_at' => 'nullable'
     ];
 
     
